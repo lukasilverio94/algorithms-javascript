@@ -7,29 +7,19 @@
 //4. return the average from the array, that means sum / arr.length;
 //5. Print it to console the result
 
-// const array = [1, 2, 3, 4, 5]
-// let sumArr = 0;
-// let median;
-
-// function getAverage(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     sumArr += arr[i];
-//     median = sumArr / arr.length;
-//   }
-//   return median;
-// }
-
-// let result = `The median of the array is: ${getAverage(array)}`;
-// console.log(result);
-
-//Using Map:
 const array = [1, 2, 3, 4, 5]
-let sum = 0;
+let sumArr = 0;
 let median;
 
-array.map((item) => {
-    sum += item    
-})
-median = sum / array.length
+function getAverage(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    sumArr += arr[i];
+    median = sumArr / arr.length;
+  }
+  return median;
+}
 
-const result = `The median of the array is: ${median}`;
+let result = `The median of the array is: ${getAverage(array)}`;
+console.log(result);
+
+
