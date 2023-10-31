@@ -13,16 +13,19 @@ for (let i = 200; i <= 2700; i++) {
     sum += i;
   }
 }
-
 console.log(`The sum of numbers divisible by 3 and 5 is: ${sum}`);
 
 // ######################################################################################################################################
 //2. Shift the Values
 // Given any array X, for example [2,1,6,4,-7], create an algorithm that shifts each number by one to the front. When your program is done the output for array [2,1,6,4,-7] should be [-7,4,6,1,2].
 //Pseudocode:
+//check if array.length < 2 (isnt an array, just return arr.)
 //Receive an array
 //create algorithm that shifts each number one by one to to front
+//first we can pop the last element and store in a variable lastElement
+//than we can add it to the beginning of the array using unshift method
 //Print output
+
 //SOLUTION:
 function shiftElementToFront(arr) {
   if (arr.length < 2) {
