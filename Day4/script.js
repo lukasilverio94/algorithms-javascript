@@ -11,7 +11,7 @@
 //Create a function isPalindrome
 //split the string to have an array
 //In this new array, stored in a variable, use methods:
-//reverse() to reverse the new arr, than join, to remove ,
+//reverse() to reverse the new arr, than join, to remove commas(,)
 //Than we need lowercase in case the user make some typo
 //we should also lowerCase the str (parameter)
 //now that we have a reversed str, we can compare if reversedString is equal to str(param)
