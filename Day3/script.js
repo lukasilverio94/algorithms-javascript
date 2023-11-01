@@ -7,8 +7,8 @@
 //Pseudocode
 //Declare a function take take a number (n) as argument
 //the n is a factorial is the product of all positive integer less than or equal to n
-//we need a loop to make the factorial 5!;
-//loop in factorial in the case 5:
+//we need a loop to make the factorial n!;
+//how it works loop inside the function in this case:
 //1. 1 * 2 = 2 / 2 * 3 = 6 / 6 * 4 = 24 / 24 * 5 = 120!
 
 //Solution
