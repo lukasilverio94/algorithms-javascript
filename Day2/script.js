@@ -118,17 +118,20 @@ console.log(removeNegative([1, -2, 4, 1, 5, -2, -15, 4, 8]));
 //6.Communist Censorship
 // Given the array of strings X = ['Man', 'I','Love','The','Matrix','Program'], replace every letter of the word Program with *, so the output would be ['Man', 'I','Love','The','Matrix','*******']. Then make your algorithm work for any word of your choice
 
-//Receive array
-//Get the last word of the array (using array.length - 1)
-//Split the last word using split() method
-//return the new arr with the last word already altered
+//make an function to receive the arr and the word to censure (not allowed word)
+//loop with map through the array word by word with map method
+//check if the word is equal to the not allowed word, if it is, replace with the using *
+//else just return each word from the loop
+//return the newCensorArray;
+//call the function and pass arguments (arr and word to censure.)
 
-function replaceLastItemArr(arr) {
-  let lastWord = arr[arr.length - 1];
-  let splitedWord = lastWord.split(" ");
-  return arr;
+function replaceLastItemArr(arr, notAllowedWord) {
+  const newCensorArray = arr.map((word) => {
+     return word === notAllowedWord ? "*".repeat(word.length) : word
+  }); 
+  return newCensorArray;
 }
 
-console.log(
-  replaceLastItemArr(["Man", "I", "Love", "The", "Matrix", "*******"])
+const array2 = ["Man", "I", "Love", "The", "Matrix", "Program"]
+console.log(replaceLastItemArr(array2, "Man")
 );
