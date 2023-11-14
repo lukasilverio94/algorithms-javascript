@@ -27,18 +27,20 @@ console.log(`The sum of numbers divisible by 3 and 5 is: ${sum}`);
 //Print output
 
 //SOLUTION:
+const array = [2, 1, 6, 4, -7];
 function shiftElementToFront(arr) {
-  if (arr.length < 2) {
-    return arr;
-  }
+   const resultArr = [];
 
-  const lastElement = arr.pop(); //last element
-  arr.unshift(lastElement); //add to the front
-  return arr;
+  while (arr.length > 0) {
+    const lastElement = arr.pop();
+    resultArr.push(lastElement);
+  }
+  return resultArr;  
 }
 
-const array = [2, 1, 6, 4, -7];
+
 const shiftedArray = shiftElementToFront(array);
+console.log(shiftedArray);
 
 // ######################################################################################################################################
 
